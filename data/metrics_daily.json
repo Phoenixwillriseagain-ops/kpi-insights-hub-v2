@@ -1,0 +1,21 @@
+{
+  "metrics_daily": [
+    { "date": "2026-06-21", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 91.2, "breach_count": 8, "total_tickets": 110, "prev_value": 89.1 },
+    { "date": "2026-06-22", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 93.4, "breach_count": 4, "total_tickets": 115 },
+    { "date": "2026-06-22", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 93.8, "breach_count": 6, "total_tickets": 115 },
+    { "date": "2026-06-23", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 94.8, "breach_count": 2, "total_tickets": 115 },
+    { "date": "2026-06-25", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 93.8, "breach_count": 4, "total_tickets": 115, "prev_value": 90.8 },
+    { "date": "2026-06-22", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 93.4, "breach_count": 8, "total_tickets": 115, "prev_value": 91.2 },
+    { "date": "2026-06-22", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 93.4, "breach_count": 8, "total_tickets": 135 },
+    { "date": "2026-06-23", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 93.8, "breach_count": 4, "total_tickets": 115 },
+    { "date": "2026-06-25", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 94.1, "breach_count": 4, "total_tickets": 115 },
+    { "date": "2026-06-26", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 92.8, "breach_count": 5, "total_tickets": 118 },
+    { "date": "2026-06-27", "service_id": "svc-incident-mgmt", "kpi_id": "sla_compliance", "value": 93.5, "breach_count": 4, "total_tickets": 120 },
+    { "date": "2026-06-21", "service_id": "svc-monitoring", "kpi_id": "sla_compliance", "value": 98.5, "breach_count": 1, "total_tickets": 80 },
+    { "date": "2026-06-22", "service_id": "svc-monitoring", "kpi_id": "sla_compliance", "value": 97.8, "breach_count": 2, "total_tickets": 82 },
+    { "date": "2026-06-23", "service_id": "svc-monitoring", "kpi_id": "sla_compliance", "value": 99.1, "breach_count": 1, "total_tickets": 78 },
+    { "date": "2026-06-24", "service_id": "svc-monitoring", "kpi_id": "sla_compliance", "value": 99.4, "breach_count": 0, "total_tickets": 75 },
+    { "date": "2026-06-25", "service_id": "svc-monitoring", "kpi_id": "sla_compliance", "value": 99.7, "breach_count": 0, "total_tickets": 77 },
+    { "date": "2026-06-27", "service_id": "svc-monitoring", "kpi_id": "sla_compliance", "value": 99.8, "breach_count": 0, "total_tickets": 80 }
+  ]
+}
