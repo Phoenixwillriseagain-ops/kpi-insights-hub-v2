@@ -1,0 +1,49 @@
+{
+  "kpis": [
+    {
+      "id": "sla_compliance",
+      "name": "SLA Compliance",
+      "unit": "%",
+      "target": 95,
+      "warning": 90,
+      "direction": "higher_is_better",
+      "category": "SLA"
+    },
+    {
+      "id": "resolution_time",
+      "name": "Avg. Resolution Time",
+      "unit": "min",
+      "target": 60,
+      "warning": 90,
+      "direction": "lower_is_better",
+      "category": "SLA"
+    },
+    {
+      "id": "ticket_volume",
+      "name": "Ticket Volume",
+      "unit": "tickets",
+      "target": 100,
+      "warning": 150,
+      "direction": "lower_is_better",
+      "category": "Operations"
+    },
+    {
+      "id": "response_time",
+      "name": "Response Time",
+      "unit": "min",
+      "target": 15,
+      "warning": 30,
+      "direction": "lower_is_better",
+      "category": "Operations"
+    },
+    {
+      "id": "uptime",
+      "name": "System Uptime",
+      "unit": "%",
+      "target": 99.9,
+      "warning": 99.5,
+      "direction": "higher_is_better",
+      "category": "Infrastructure"
+    }
+  ]
+}
