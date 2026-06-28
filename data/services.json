@@ -1,0 +1,39 @@
+{
+  "services": [
+    {
+      "id": "svc-incident-mgmt",
+      "name": "Incident Management",
+      "owner": "Ops",
+      "category": "Core Service",
+      "sla_tier": "Gold"
+    },
+    {
+      "id": "svc-change-mgmt",
+      "name": "Change Management",
+      "owner": "Ops",
+      "category": "Core Service",
+      "sla_tier": "Gold"
+    },
+    {
+      "id": "svc-reporting",
+      "name": "Reporting & Analytics",
+      "owner": "Analytics",
+      "category": "Supporting Service",
+      "sla_tier": "Silver"
+    },
+    {
+      "id": "svc-monitoring",
+      "name": "Monitoring & Alerting",
+      "owner": "SRE",
+      "category": "Infrastructure",
+      "sla_tier": "Gold"
+    },
+    {
+      "id": "svc-user-mgmt",
+      "name": "User Management",
+      "owner": "Identity",
+      "category": "Supporting Service",
+      "sla_tier": "Silver"
+    }
+  ]
+}
