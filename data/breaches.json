@@ -1,112 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Pulse · KPI & Breaches Analyzer v2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  /styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
-  <script src="assets/app.js" defer></script>
-</head>
-<body>
-  <div class="pulse-app">
-
-    <!-- Header -->
-    <header class="pulse-header">
-      <div class="header-left">
-        <h1 class="app-title">Pulse</h1>
-        <span class="app-subtitle">KPI & Breaches Analyzer · v2</span>
-      </div>
-      <div class="header-right">
-        <span class="env-pill">Phase: Production</span>
-        <span class="lcp-pill" id="lcpStatus">LCP: —</span>
-        <button class="refresh-btn" id="refreshBtn" title="Refresh">↻</button>
-      </div>
-    </header>
-
-    <div class="pulse-layout">
-
-      <!-- Sidebar -->
-      <aside class="pulse-sidebar">
-        <section class="filter-section">
-          <h2 class="section-title">Filters</h2>
-
-          abel class="filter-label">
-            Service
-            <select id="serviceFilter" class="filter-select"></select>
-          </label>
-
-          abel class="filter-label">
-            Phase
-            <select id="phaseFilter" class="filter-select">
-              <option value="">All phases</option>
-              <option value="Production">Production</option>
-              <option value="UAT">UAT</option>
-              <option value="Development">Development</option>
-            </select>
-          </label>
-
-          abel class="filter-label">
-            Date range
-            <select id="dateFilter" class="filter-select">
-              <option value="last_7">Last 7 days</option>
-              <option value="last_30">Last 30 days</option>
-              <option value="month_to_date">Month to date</option>
-            </select>
-          </label>
-        </section>
-
-        <section class="filter-section">
-          <h2 class="section-title">Status</h2>
-          <div class="status-chips">
-            <button class="status-chip status-good" data-status="good">Good</button>
-            <button class="status-chip status-warning" data-status="warning">Needs attention</button>
-            <button class="status-chip status-breach" data-status="breach">Breaches</button>
-          </div>
-        </section>
-      </aside>
-
-      <!-- Main -->
-      <main class="pulse-main">
-
-        <!-- KPI Cards -->
-        <section class="kpi-grid" id="kpiGrid">
-          <div class="loading-placeholder">Loading KPIs...</div>
-        </section>
-
-        <!-- Charts + Summary -->
-        <section class="charts-row">
-          <div class="chart-panel">
-            <div class="panel-header">
-              <h2 class="panel-title">SLA Compliance Trend</h2>
-              <span id="chartMeta" class="panel-meta">Last 30 days · All services</span>
-            </div>
-            anvas id="slaTrendChart"></canvas>
-          </div>
-
-          <div class="summary-panel">
-            <div class="panel-header">
-              <h2 class="panel-title">Today's Snapshot</span>
-            </div>
-            <ul id="summaryList" class="summary-list">
-              >Loading...</div>
-            </ul>
-          </div>
-        </section>
-
-        <!-- Breaches -->
-        <section class="breaches-section">
-          <div class="panel-header">
-            <h2 class="panel-title">Breaches</h2>
-            <span id="breachMeta" class="panel-meta">Loading...</span>
-          </div>
-          <div class="breach-list" id="breachList">
-            <div class="loading-placeholder">Loading breaches...</div>
-          </div>
-        </section>
-
-      </main>
-    </div>
-  </div>
-</body>
-</html>
+{
+  "breaches": [
+    {
+      "id": "BR-2026-0001",
+      "service_id": "svc-incident-mgmt",
+      "kpi_id": "resolution_time",
+      "timestamp": "2026-06-27T13:45:00Z",
+      "phase": "Production",
+      "severity": "High",
+      "value": 145,
+      "threshold": 120,
+      "root_cause": "Dependency outage",
+      "status": "Open"
+    },
+    {
+      "id": "BR-2026-0002",
+      "service_id": "svc-incident-mgmt",
+      "kpi_id": "sla_compliance",
+      "timestamp": "2026-06-27T23:00:00Z",
+      "phase": "Production",
+      "severity": "Medium",
+      "value": 88.5,
+      "threshold": 95,
+      "root_cause": "Peak load",
+      "status": "Closed"
+    },
+    {
+      "id": "BR-2026-0003",
+      "service_id": "svc-monitoring",
+      "kpi_id": "uptime",
+      "timestamp": "2026-06-26T08:30:00Z",
+      "phase": "Production",
+      "severity": "High",
+      "value": 99.2,
+      "threshold": 99.9,
+      "root_cause": "Network partition",
+      "status": "Investigating"
+    },
+    {
+      "id": "BR-2026-0004",
+      "service_id": "svc-user-mgmt",
+      "kpi_id": "response_time",
+      "timestamp": "2026-06-25T09:15:00Z",
+      "phase": "Production",
+      "severity": "Medium",
+      "value": 42,
+      "threshold": 30,
+      "root_cause": "Database latency",
+      "status": "Closed"
+    },
+    {
+      "id": "BR-2026-0005",
+      "service_id": "svc-change-mgmt",
+      "kpi_id": "resolution_time",
+      "timestamp": "2026-06-24T16:20:00Z",
+      "phase": "UAT",
+      "severity": "Low",
+      "value": 95,
+      "threshold": 90,
+      "root_cause": "Resource contention",
+      "status": "Closed"
+    }
+  ]
+}
